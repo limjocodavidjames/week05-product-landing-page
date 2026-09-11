@@ -6,4 +6,6 @@
 
     <x-showcase />
 
+    <x-pricing />
+
 </x-layouts.app>
