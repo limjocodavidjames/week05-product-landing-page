@@ -12,4 +12,6 @@
 
     <x-cta />
 
-</x-layouts.app>
+    <x-footer />
+
+</x-layouts.app>    
