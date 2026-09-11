@@ -23,20 +23,20 @@
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
 
-                <!-- Register / Order Now -->
-                <a href="#pricing" class="bg-pc-yellow hover:bg-yellow-300 text-pc-green font-black text-base px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform text-center">
+                <!-- Order Now -->
+                <x-button href="#pricing" variant="primary" size="lg">
                     🍟 Order Now
-                </a>
+                </x-button>
 
-                <!-- Contact Sales -->
-                <a href="mailto:potatocorner.stacruznlaguna@gmail.com" class="bg-white hover:bg-gray-50 text-pc-green font-black text-base px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transform text-center">
+                <!-- Contact Us -->
+                <x-button href="mailto:potatocorner.stacruznlaguna@gmail.com" variant="secondary" size="lg">
                     📞 Contact Us
-                </a>
+                </x-button>
 
-                <!-- Start Free Trial -->
-                <a href="#features" class="border-2 border-white hover:border-pc-yellow text-white hover:text-pc-yellow font-bold text-base px-8 py-4 rounded-full transition-all duration-200 text-center">
+                <!-- Free Tasting -->
+                <x-button href="#features" variant="outline" size="lg">
                     🎉 Start Free Tasting
-                </a>
+                </x-button>
 
             </div>
         </div>
