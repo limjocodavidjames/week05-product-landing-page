@@ -1,16 +1,21 @@
-<section id="features" class="py-24 bg-pc-cream">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="features" class="py-24 relative"
+    style="background-image: url('{{ asset('images/features-bg.jpg') }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0" style="background: rgba(5, 40, 15, 0.88);"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <!-- Section Header -->
         <div class="text-center mb-16">
-            <span class="inline-block bg-yellow-100 text-pc-green text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+            <span class="inline-block bg-pc-yellow text-pc-green text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
                 Why Choose Us
             </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-pc-green leading-tight mb-4">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">
                 What Makes Potato Corner
                 <span class="text-pc-yellow"> Special?</span>
             </h2>
-            <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+            <p class="text-green-200 text-lg max-w-2xl mx-auto">
                 From our signature flavors to our fresh ingredients — here's why thousands of Filipinos keep coming back for more.
             </p>
         </div>
