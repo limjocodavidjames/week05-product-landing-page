@@ -8,4 +8,6 @@
 
     <x-pricing />
 
+    <x-testimonials />
+
 </x-layouts.app>
