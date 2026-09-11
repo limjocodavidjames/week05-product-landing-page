@@ -10,4 +10,6 @@
 
     <x-testimonials />
 
+    <x-cta />
+
 </x-layouts.app>
