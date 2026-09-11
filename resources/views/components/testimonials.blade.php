@@ -1,16 +1,21 @@
-<section id="testimonials" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="testimonials" class="py-24 relative"
+    style="background-image: url('{{ asset('images/testimonials-bg.jpg') }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0" style="background: rgba(5, 40, 15, 0.90);"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <!-- Section Header -->
         <div class="text-center mb-16">
-            <span class="inline-block bg-yellow-100 text-pc-green text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+            <span class="inline-block bg-pc-yellow text-pc-green text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
                 Testimonials
             </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-pc-green leading-tight mb-4">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">
                 What Our Customers
                 <span class="text-pc-yellow"> Are Saying</span>
             </h2>
-            <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+            <p class="text-green-200 text-lg max-w-2xl mx-auto">
                 Don't just take our word for it — hear from the happy customers of Potato Corner Sta. Cruz, Laguna.
             </p>
         </div>
@@ -45,19 +50,19 @@
         </div>
 
         <!-- Bottom Rating Summary -->
-        <div class="mt-16 bg-pc-cream rounded-3xl p-8 text-center border border-yellow-100">
+        <div class="mt-16 bg-white/10 backdrop-blur-sm rounded-3xl p-8 text-center border border-white/20">
             <div class="flex flex-wrap justify-center gap-12">
                 <div>
-                    <p class="text-pc-green font-black text-4xl">★ 4.9</p>
-                    <p class="text-gray-500 text-sm mt-1">Average Rating</p>
+                    <p class="text-pc-yellow font-black text-4xl">★ 4.9</p>
+                    <p class="text-green-200 text-sm mt-1">Average Rating</p>
                 </div>
                 <div>
-                    <p class="text-pc-green font-black text-4xl">500+</p>
-                    <p class="text-gray-500 text-sm mt-1">Happy Customers</p>
+                    <p class="text-pc-yellow font-black text-4xl">500+</p>
+                    <p class="text-green-200 text-sm mt-1">Happy Customers</p>
                 </div>
                 <div>
-                    <p class="text-pc-green font-black text-4xl">100%</p>
-                    <p class="text-gray-500 text-sm mt-1">Would Recommend</p>
+                    <p class="text-pc-yellow font-black text-4xl">100%</p>
+                    <p class="text-green-200 text-sm mt-1">Would Recommend</p>
                 </div>
             </div>
         </div>
