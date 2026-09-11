@@ -1,4 +1,6 @@
-<x-layouts.app>
+@extends('layouts.app')
+
+@section('content')
 
     <x-hero />
 
@@ -14,4 +16,4 @@
 
     <x-footer />
 
-</x-layouts.app>    
+@endsection    

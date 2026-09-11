@@ -25,7 +25,13 @@
                     <span class="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full">Fan Favorite</span>
                 </div>
                 <div class="text-center py-4">
-                    <div class="text-7xl mb-4">🍟</div>
+                    <div class="rounded-2xl overflow-hidden mb-4 shadow-lg">
+                        <img
+                            src="{{ asset('images/bbq-fries.jpg') }}"
+                            alt="Classic BBQ Fries"
+                            class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
                     <h3 class="text-white font-black text-2xl mb-2">Classic BBQ Fries</h3>
                     <p class="text-green-200 text-sm leading-relaxed">
                         Our most popular flavor — smoky, savory BBQ seasoning on golden crispy fries. A true Potato Corner classic.
@@ -48,32 +54,47 @@
             </div>
 
             <!-- Dashboard Preview — Flavor Menu -->
-            <div class="bg-gray-50 border border-gray-100 rounded-3xl p-8 shadow-md">
-                <div class="flex items-center justify-between mb-6">
-                    <h3 class="text-pc-green font-black text-xl">Flavor Menu</h3>
-                    <span class="text-xs text-gray-400 font-medium">All available daily</span>
-                </div>
-                <div class="space-y-3">
-                    @foreach([
-                        ['name' => 'BBQ', 'emoji' => '🔥', 'desc' => 'Smoky & Savory', 'color' => 'bg-orange-100 text-orange-700'],
-                        ['name' => 'Cheese', 'emoji' => '🧀', 'desc' => 'Rich & Creamy', 'color' => 'bg-yellow-100 text-yellow-700'],
-                        ['name' => 'Sour Cream', 'emoji' => '🤍', 'desc' => 'Tangy & Smooth', 'color' => 'bg-blue-100 text-blue-700'],
-                        ['name' => 'Spicy BBQ', 'emoji' => '🌶️', 'desc' => 'Bold & Fiery', 'color' => 'bg-red-100 text-red-700'],
-                        ['name' => 'Ranch', 'emoji' => '🌿', 'desc' => 'Cool & Herby', 'color' => 'bg-green-100 text-green-700'],
-                    ] as $flavor)
-                    <div class="flex items-center justify-between bg-white rounded-xl px-4 py-3 border border-gray-100 hover:border-pc-yellow transition-colors duration-200">
-                        <div class="flex items-center gap-3">
-                            <span class="text-xl">{{ $flavor['emoji'] }}</span>
-                            <div>
-                                <p class="text-pc-green font-bold text-sm">{{ $flavor['name'] }}</p>
-                                <p class="text-gray-400 text-xs">{{ $flavor['desc'] }}</p>
-                            </div>
-                        </div>
-                        <span class="text-xs font-bold px-2 py-1 rounded-full {{ $flavor['color'] }}">
-                            Available
-                        </span>
+            <div class="bg-gray-50 border border-gray-100 rounded-3xl overflow-hidden shadow-md">
+
+                <!-- Flavor Grid Photo -->
+                <div class="relative h-48 overflow-hidden">
+                    <img
+                        src="{{ asset('images/flavors-grid.jpg') }}"
+                        alt="Potato Corner Flavors"
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-pc-green/80 to-transparent flex items-end p-4">
+                        <p class="text-white font-black text-lg">Our Famous Flavors</p>
                     </div>
-                    @endforeach
+                </div>
+
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-pc-green font-black text-lg">Flavor Menu</h3>
+                        <span class="text-xs text-gray-400 font-medium">All available daily</span>
+                    </div>
+                    <div class="space-y-2">
+                        @foreach([
+                            ['name' => 'BBQ', 'emoji' => '🔥', 'desc' => 'Smoky & Savory', 'color' => 'bg-orange-100 text-orange-700'],
+                            ['name' => 'Cheese', 'emoji' => '🧀', 'desc' => 'Rich & Creamy', 'color' => 'bg-yellow-100 text-yellow-700'],
+                            ['name' => 'Sour Cream', 'emoji' => '🤍', 'desc' => 'Tangy & Smooth', 'color' => 'bg-blue-100 text-blue-700'],
+                            ['name' => 'Spicy BBQ', 'emoji' => '🌶️', 'desc' => 'Bold & Fiery', 'color' => 'bg-red-100 text-red-700'],
+                            ['name' => 'Ranch', 'emoji' => '🌿', 'desc' => 'Cool & Herby', 'color' => 'bg-green-100 text-green-700'],
+                        ] as $flavor)
+                        <div class="flex items-center justify-between bg-white rounded-xl px-4 py-2.5 border border-gray-100 hover:border-pc-yellow transition-colors duration-200">
+                            <div class="flex items-center gap-3">
+                                <span class="text-lg">{{ $flavor['emoji'] }}</span>
+                                <div>
+                                    <p class="text-pc-green font-bold text-sm">{{ $flavor['name'] }}</p>
+                                    <p class="text-gray-400 text-xs">{{ $flavor['desc'] }}</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-bold px-2 py-1 rounded-full {{ $flavor['color'] }}">
+                                Available
+                            </span>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
 

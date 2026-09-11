@@ -20,7 +20,7 @@
         <img
             src="{{ $avatar }}"
             alt="{{ $name }}"
-            class="w-12 h-12 rounded-full object-cover border-2 border-pc-yellow shadow-sm"
+            class="w-14 h-14 rounded-full object-cover border-2 border-pc-yellow shadow-md"
         />
         <div>
             <p class="text-pc-green font-bold text-sm">{{ $name }}</p>

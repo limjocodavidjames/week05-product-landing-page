@@ -22,7 +22,7 @@
                 name="Maria Santos"
                 position="Student, Sta. Cruz National High School"
                 review="Potato Corner is my go-to merienda after school! The BBQ flavor is absolutely addicting. I come here at least three times a week and I never get tired of it!"
-                avatar="https://ui-avatars.com/api/?name=Maria+Santos&background=166534&color=FBBF24&size=128&bold=true"
+                avatar="{{ asset('images/customer-1.jpg') }}"
                 :rating="5"
             />
 
@@ -30,7 +30,7 @@
                 name="Carlo Reyes"
                 position="Local Resident, Sta. Cruz Laguna"
                 review="Masarap talaga ang fries dito! Laging fresh at crispy. Ang Cheese flavor namin paborito ng buong pamilya. Perfect na merienda para sa lahat ng edad!"
-                avatar="https://ui-avatars.com/api/?name=Carlo+Reyes&background=DC2626&color=ffffff&size=128&bold=true"
+                avatar="{{ asset('images/customer-2.jpg') }}"
                 :rating="5"
             />
 
@@ -38,7 +38,7 @@
                 name="Angela Cruz"
                 position="Teacher, Laguna State Polytechnic University"
                 review="I always recommend Potato Corner to my students and colleagues. Affordable, delicious, and always consistent. The Spicy BBQ flavor is my personal favorite!"
-                avatar="https://ui-avatars.com/api/?name=Angela+Cruz&background=FBBF24&color=166534&size=128&bold=true"
+                avatar="{{ asset('images/customer-3.jpg') }}"
                 :rating="5"
             />
 
