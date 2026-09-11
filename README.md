@@ -1,58 +1,182 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🍟 Potato Corner – Sta. Cruz, Laguna
+### Responsive Product Landing Page
+**ITST 302 – Client-Server Technologies | Week 5 Mini Project 04**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 📌 Project Overview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This is a fully responsive product landing page built for **Potato Corner – Sta. Cruz, Laguna branch** as part of the ITST 302 laboratory activity. The project demonstrates the use of Laravel Blade Components, Tailwind CSS utility classes, and responsive design principles to create a modern, mobile-friendly marketing page.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Tech Stack
 
-## Learning Laravel
+| Technology | Version | Purpose |
+|---|---|---|
+| Laravel | 10.x | PHP Framework, Blade templating |
+| Tailwind CSS | 3.x | Utility-first CSS styling |
+| Alpine.js | 3.x (CDN) | Mobile menu interactivity |
+| Vite | 4.x | Asset bundling |
+| PHP | 8.1+ | Backend runtime |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🧩 Blade Components
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+| Component | File | Description |
+|---|---|---|
+| Layout | `layouts/app.blade.php` | Base HTML layout with `@yield('content')` |
+| Navbar | `components/navbar.blade.php` | Responsive nav with Alpine.js mobile menu |
+| Hero | `components/hero.blade.php` | Full-screen hero with background photo |
+| Button | `components/button.blade.php` | Reusable button with variants & sizes |
+| Feature Card | `components/feature-card.blade.php` | Individual feature card with accent colors |
+| Features | `components/features.blade.php` | 6-card features grid section |
+| Showcase | `components/showcase.blade.php` | Product photo showcase section |
+| Pricing Card | `components/pricing-card.blade.php` | Individual pricing tier card |
+| Pricing | `components/pricing.blade.php` | 3-tier pricing section |
+| Testimonial Card | `components/testimonial-card.blade.php` | Customer review card with avatar |
+| Testimonials | `components/testimonials.blade.php` | 3-card testimonials section |
+| CTA | `components/cta.blade.php` | Call-to-action with info cards |
+| Footer | `components/footer.blade.php` | 4-column footer with links |
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 🎨 Brand Colors
 
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+```js
+// tailwind.config.js
+colors: {
+    'pc-green':       '#166534',
+    'pc-green-light': '#16a34a',
+    'pc-yellow':      '#FBBF24',
+    'pc-yellow-light':'#FDE68A',
+    'pc-red':         '#DC2626',
+    'pc-cream':       '#FFFBEB',
+}
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 📐 Page Sections
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. **Navbar** — Fixed top navigation with logo, links, and mobile hamburger menu
+2. **Hero** — Full background photo with dark green gradient overlay, headline, CTA buttons, and stats
+3. **Features** — 6 feature cards on photo background explaining why Potato Corner is special
+4. **Showcase** — BBQ fries photo card + flavor menu grid with product images
+5. **Pricing** — 3 pricing tiers (Starter ₱35 / Regular ₱55 / Large ₱75) with featured card
+6. **Testimonials** — 3 customer reviews with avatars, ratings, and summary stats
+7. **CTA** — Call-to-action with location, store hours, and contact info cards
+8. **Footer** — Logo, quick links, flavor list, and contact information
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📱 Responsive Breakpoints
 
-## Security Vulnerabilities
+| Breakpoint | Width | Layout |
+|---|---|---|
+| Mobile | < 640px | Single column, stacked sections |
+| Tablet | 640px – 1024px | 2-column grids |
+| Desktop | > 1024px | Full 3-column layouts |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🖼️ Images Used
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| File | Section | Description |
+|---|---|---|
+| `hero-fries.jpg` | Hero | Hero background + photo card |
+| `features-bg.jpg` | Features | Section background |
+| `bbq-fries.jpg` | Showcase | BBQ fries card |
+| `flavors-grid.jpg` | Showcase | Flavor menu header |
+| `pricing-bg.jpg` | Pricing | Section background |
+| `testimonials-bg.jpg` | Testimonials | Section background |
+| `customer-1.jpg` | Testimonials | Maria Santos avatar |
+| `customer-2.jpg` | Testimonials | Carlo Reyes avatar |
+| `customer-3.jpg` | Testimonials | Angela Cruz avatar |
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/week05-product-landing-page.git
+cd week05-product-landing-page
+
+# 2. Install PHP dependencies
+composer install
+
+# 3. Install Node dependencies
+npm install
+
+# 4. Copy environment file
+cp .env.example .env
+
+# 5. Generate application key
+php artisan key:generate
+
+# 6. Run development servers (in two separate terminals)
+npm run dev
+php artisan serve
+```
+
+Then visit: `http://127.0.0.1:8000`
+
+---
+
+## 📁 Project Structure
+
+```
+week05-product-landing-page/
+├── resources/
+│   └── views/
+│       ├── layouts/
+│       │   └── app.blade.php
+│       ├── components/
+│       │   ├── navbar.blade.php
+│       │   ├── hero.blade.php
+│       │   ├── button.blade.php
+│       │   ├── feature-card.blade.php
+│       │   ├── features.blade.php
+│       │   ├── showcase.blade.php
+│       │   ├── pricing-card.blade.php
+│       │   ├── pricing.blade.php
+│       │   ├── testimonial-card.blade.php
+│       │   ├── testimonials.blade.php
+│       │   ├── cta.blade.php
+│       │   └── footer.blade.php
+│       └── pages/
+│           └── home.blade.php
+├── public/
+│   └── images/
+│       ├── hero-fries.jpg
+│       ├── features-bg.jpg
+│       ├── bbq-fries.jpg
+│       ├── flavors-grid.jpg
+│       ├── pricing-bg.jpg
+│       ├── testimonials-bg.jpg
+│       ├── customer-1.jpg
+│       ├── customer-2.jpg
+│       └── customer-3.jpg
+├── routes/
+│   └── web.php
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## 👨‍💻 Developer
+
+**David James Limjoco**
+ITST 302 – Client-Server Technologies
+Week 5 Laboratory Activity: Mini Project 04
+Sta. Cruz, Laguna | 2026
+
+---
+
+## 📄 License
+
+This project is created for educational purposes as part of ITST 302 coursework.
