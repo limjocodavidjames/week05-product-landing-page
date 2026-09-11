@@ -1,16 +1,21 @@
-<section id="pricing" class="py-24 bg-pc-cream">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="pricing" class="py-24 relative"
+    style="background-image: url('{{ asset('images/pricing-bg.jpg') }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0" style="background: rgba(5, 40, 15, 0.85);"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         <!-- Section Header -->
         <div class="text-center mb-16">
-            <span class="inline-block bg-yellow-100 text-pc-green text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+            <span class="inline-block bg-pc-yellow text-pc-green text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
                 Pricing
             </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-pc-green leading-tight mb-4">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">
                 Simple, Affordable
                 <span class="text-pc-yellow"> Pricing</span>
             </h2>
-            <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+            <p class="text-green-200 text-lg max-w-2xl mx-auto">
                 Whether you're grabbing a quick snack or ordering for the whole barkada — we have the perfect size for you.
             </p>
         </div>
@@ -63,7 +68,7 @@
 
         <!-- Bottom Note -->
         <div class="text-center mt-12">
-            <p class="text-gray-400 text-sm">
+            <p class="text-green-300 text-sm">
                 💡 Combo meals and party trays also available. 
                 <a href="#contact" class="text-pc-green font-bold hover:text-pc-yellow transition-colors duration-200">
                     Ask us for details →
